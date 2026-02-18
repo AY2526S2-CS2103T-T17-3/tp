@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: gradle
+
+      - name: Make Gradle wrapper executable
+        run: chmod +x gradlew
+
+      - name: Run checks (tests + checkstyle if wired into `check`)
+        run: ./gradlew clean check
+
+      # If you prefer explicit tasks instead of `check`:
+      # - name: Run tests
+      #   run: ./gradlew test
+      # - name: Run checkstyle
+      #   run: ./gradlew checkstyleMain checkstyleTest
