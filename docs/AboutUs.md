@@ -30,7 +30,6 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 * Role: Developer
 * Responsibilities: UI
 
-
 ### Shana Nadia Sjariffudin
 
 <img src="images/shana-nadia.png" width="200px">
@@ -39,14 +38,14 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 [[portfolio](https://www.linkedin.com/in/shana-sjariffudin-3a52453a9/)]
 
 * Role: Team Member
-* Responsibilities: In charge of Storage
-* 
+* Responsibilities: Storage
 
 ### Sean Sukamto
 
 <img src="images/seansukamto.png" width="200px">
 
 [[github](http://github.com/seansukamto)]
+[[portfolio](https://www.linkedin.com/in/sean-sukamto-a866682a2/)]
 
 * Role: Developer
 * Responsibilities: UI
@@ -55,10 +54,8 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 <img src="images/yytelliot.png" width="200px">
 
-[[homepage](https://www.linkedin.com/in/elliot-yong-b69526348)]
 [[github](https://github.com/yytelliot)]
-[[portfolio](https://github.com/yytelliot)]
+[[portfolio](https://www.linkedin.com/in/elliot-yong-b69526348)]
 
 * Role: Code quality, git expert
-* Responsibilities: In charge of model
-
+* Responsibilities: Model
