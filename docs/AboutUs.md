@@ -9,6 +9,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 ## Project team
 
+<<<<<<< HEAD
 ### Elliot Yong
 
 <img src="images/yytelliot.png" width="200px">
@@ -22,6 +23,18 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 * Responsibilities: In charge of model
 =======
 * Role: Project Advisor
+=======
+### Henry Tse
+
+<img src="images/iota113.png" width="200px">
+
+[[homepage](http://iota113.github.io)]
+[[github](https://github.com/iota113)]
+[[portfolio](http://iota113.github.io))]
+
+* Role: Deliverables and deadlines, Scheduling and tracking
+* Responsibilities: Model, Logic
+>>>>>>> f91fb1c0 (Update AboutUs)
 
 ### Kim Yungju
 
