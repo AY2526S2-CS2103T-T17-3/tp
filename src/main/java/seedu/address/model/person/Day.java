@@ -5,12 +5,16 @@ import static seedu.address.commons.util.AppUtil.checkArgument;
 
 import java.util.Arrays;
 
+/**
+ * Represents a Day in the address book.
+ * Guarantees: immutable; is valid as declared in {@link #isValidDay(String)}
+ */
 public class Day {
 
     public static final String MESSAGE_CONSTRAINTS =
             "Lesson Day should only be a day of the week.";
 
-    public String value;
+    public final String value;
 
     /**
      * Constructs a {@code Tuition Rate}.
@@ -55,6 +59,9 @@ public class Day {
         return value.hashCode();
     }
 
+    /**
+     * Represents the valid days of the week.
+     */
     public enum DayOfWeek {
         MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
 

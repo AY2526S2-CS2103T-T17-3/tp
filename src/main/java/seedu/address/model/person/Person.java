@@ -29,6 +29,9 @@ public class Person {
     private final Rate rate;
     private final Set<Tag> tags = new HashSet<>();
 
+    /**
+     * Old method: here as an overloaded because of dependencies with other parts.
+     */
     public Person(Name name, Phone phone, Email email, Address address, Set<Tag> tags) {
         requireAllNonNull(name, phone, email, address, tags);
         this.name = name;

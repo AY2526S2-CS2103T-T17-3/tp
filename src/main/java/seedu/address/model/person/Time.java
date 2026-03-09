@@ -3,6 +3,10 @@ package seedu.address.model.person;
 import static java.util.Objects.requireNonNull;
 import static seedu.address.commons.util.AppUtil.checkArgument;
 
+/**
+ * Represents a Person's lesson time in the address book.
+ * Guarantees: immutable; is valid as declared in {@link #isValidTime(String)}
+ */
 public class Time {
 
     public static final String MESSAGE_CONSTRAINTS =
@@ -17,14 +21,14 @@ public class Time {
      */
     public Time(String lessonTime) {
         requireNonNull(lessonTime);
-        checkArgument(isValidLessonTime(lessonTime), MESSAGE_CONSTRAINTS);
+        checkArgument(isValidTime(lessonTime), MESSAGE_CONSTRAINTS);
         value = lessonTime;
     }
 
     /**
      * Returns true if a given string is a valid LessonTime number.
      */
-    public static boolean isValidLessonTime(String test) {
+    public static boolean isValidTime(String test) {
         return test.matches(VALIDATION_REGEX);
     }
 
