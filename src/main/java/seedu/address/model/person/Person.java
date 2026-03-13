@@ -90,7 +90,7 @@ public class Person {
         return endTime;
     }
 
-    public Rate getTuitionRate() {
+    public Rate getRate() {
         return rate;
     }
 
@@ -112,7 +112,8 @@ public class Person {
         }
 
         return otherPerson != null
-                && otherPerson.getName().equals(getName());
+                && otherPerson.getName().isSameName(getName())
+                && otherPerson.getPhone().equals(getPhone());
     }
 
     /**
