@@ -1,6 +1,5 @@
 package seedu.address.logic.commands;
 
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import static java.util.Objects.requireNonNull;
@@ -40,11 +39,11 @@ public abstract class TagCommand extends Command {
         return lastShownList.get(targetIndex.getZeroBased());
     }
 
-    Index getTargetIndex() {
+    protected Index getTargetIndex() {
         return targetIndex;
     }
 
-    Set<Tag> getTags() {
-        return Collections.unmodifiableSet(tags);
+    protected Set<Tag> getTags() {
+        return new HashSet<>(tags);
     }
 }

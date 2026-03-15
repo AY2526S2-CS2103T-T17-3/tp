@@ -17,13 +17,14 @@ import seedu.address.model.tag.Tag;
  * Adds a tag to an existing person in the address book.
  */
 public class AddTagCommand extends TagCommand {
-    public static final String COMMAND_WORD = "add";
+    public static final String SUBCOMMAND_WORD = "add";
+    public static final String COMMAND_PHRASE = TagCommand.COMMAND_WORD + " " + SUBCOMMAND_WORD;
     
-    public static final String MESSAGE_USAGE = COMMAND_WORD + ": Adds a tag to a person in the address book. "
+    public static final String MESSAGE_USAGE = COMMAND_PHRASE + ": Adds a tag to a person in the address book. "
             + "Parameters: "
             + "INDEX (must be a positive integer) "
             + PREFIX_TAG + "TAG (must be a non-empty string)\n"
-            + "Example: " + TagCommand.COMMAND_WORD + " " + COMMAND_WORD + " "
+            + "Example: " + COMMAND_PHRASE + " "
             + "1 "
             + PREFIX_TAG + "Primary1 "
             + PREFIX_TAG + "Mathematics";

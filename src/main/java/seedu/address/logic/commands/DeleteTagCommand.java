@@ -18,13 +18,14 @@ import seedu.address.model.tag.Tag;
  */
 public class DeleteTagCommand extends TagCommand {
 
-	public static final String COMMAND_WORD = "delete";
+	public static final String SUBCOMMAND_WORD = "delete";
+	public static final String COMMAND_PHRASE = TagCommand.COMMAND_WORD + " " + SUBCOMMAND_WORD;
 
-	public static final String MESSAGE_USAGE = COMMAND_WORD + ": Deletes tag(s) from a person in the address book. "
+	public static final String MESSAGE_USAGE = COMMAND_PHRASE + ": Deletes tag(s) from a person in the address book. "
 			+ "Parameters: "
-			+ "INDEX (must be a positive integer) "
+			+ "INDEX (must be a positive integer)g "
 			+ PREFIX_TAG + "TAG (must be a non-empty string)\n"
-			+ "Example: " + TagCommand.COMMAND_WORD + " " + COMMAND_WORD + " "
+			+ "Example: " + COMMAND_PHRASE + " "
 			+ "1 "
 			+ PREFIX_TAG + "Primary1 "
 			+ PREFIX_TAG + "Mathematics";

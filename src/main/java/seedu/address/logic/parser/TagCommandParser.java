@@ -32,10 +32,10 @@ public class TagCommandParser implements Parser<Command> {
         String subcommand = splitInput[0];
         String subcommandArgs = splitInput.length > 1 ? splitInput[1] : "";
 
-        if (subcommand.equals(AddTagCommand.COMMAND_WORD)) {
+        if (subcommand.equals(AddTagCommand.SUBCOMMAND_WORD)) {
             return new AddTagCommandParser().parse(subcommandArgs);
         }
-        if (subcommand.equals(DeleteTagCommand.COMMAND_WORD)) {
+        if (subcommand.equals(DeleteTagCommand.SUBCOMMAND_WORD)) {
             return new DeleteTagCommandParser().parse(subcommandArgs);
         }
 
