@@ -23,6 +23,7 @@ public class Person {
 
     // Data fields
     private final Address address;
+    private final Remark remark;
     private final Day day;
     private final Time startTime;
     private final Time endTime;
@@ -38,6 +39,7 @@ public class Person {
         this.phone = phone;
         this.email = email;
         this.address = address;
+        this.remark = new Remark("");
         this.tags.addAll(tags);
         this.day = null;
         this.startTime = null;
@@ -48,13 +50,14 @@ public class Person {
     /**
      * Every field must be present and not null.
      */
-    public Person(Name name, Phone phone, Email email, Address address, Day day,
+    public Person(Name name, Phone phone, Email email, Address address, Remark remark, Day day,
                   Time startTime, Time endTime, Rate rate, Set<Tag> tags) {
-        requireAllNonNull(name, phone, email, address, day, startTime, endTime, rate, tags);
+        requireAllNonNull(name, phone, email, address, remark, day, startTime, endTime, rate, tags);
         this.name = name;
         this.phone = phone;
         this.email = email;
         this.address = address;
+        this.remark = remark;
         this.day = day;
         this.startTime = startTime;
         this.endTime = endTime;
@@ -76,6 +79,10 @@ public class Person {
 
     public Address getAddress() {
         return address;
+    }
+
+    public Remark getRemark() {
+        return remark;
     }
 
     public Day getDay() {
