@@ -39,6 +39,10 @@ public class Person {
                   Time startTime, Time endTime, Rate rate, boolean isPaid, Set<Tag> tags) {
         requireAllNonNull(name, phone, email, address, day, startTime, endTime, rate, tags);
 
+        if (!endTime.isAfter(startTime)) {
+            throw new IllegalArgumentException(Time.MESSAGE_COMPARISON_CONSTRAINTS);
+        }
+
         this.name = name;
         this.phone = phone;
         this.email = email;
