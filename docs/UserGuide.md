@@ -210,7 +210,7 @@ Refer to the [Features](#features) section below for the full details of each co
 | **Start Time** | `st/` | 24-hour format `HH:mm` (e.g., `09:00`, `14:30`)                                                                     | `st/14:00` |
 | **End Time** | `et/` | 24-hour format `HH:mm`; **must be strictly after** start time                                                       | `et/16:00` |
 | **Rate** | `r/` | A non-negative whole number (max 5000) representing the hourly rate. Leading zeroes will be removed e.g. 0040 -> 40 | `r/50` |
-| **Tag** | `t/` | Alphanumeric characters only (no spaces); stored in lowercase                                                       | `t/math` |
+| **Tag** | `t/` | Alphanumeric characters only (no spaces)                                                                            | `t/math` |
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -447,7 +447,7 @@ Adds one or more tags to a student **without replacing** existing tags.
 * Adds the specified tag(s) to the student(s) at the specified `INDEX`(es).
 * The index **must be a positive integer** (1, 2, 3, …).
 * At least one tag must be provided.
-* Tags are alphanumeric only (no spaces) and are stored in lowercase.
+* Tags are alphanumeric only (no spaces).
 * If any of the specified tags already exist on a student, the command will fail and none of the tags will be added.
 
 <div markdown="span" class="alert alert-primary">:bulb: **Tip:**

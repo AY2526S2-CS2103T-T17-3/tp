@@ -8,6 +8,7 @@ import java.util.Objects;
 import java.util.Set;
 
 import seedu.address.commons.util.ToStringBuilder;
+import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.tag.Tag;
 
 /**
@@ -37,10 +38,6 @@ public class Person {
     public Person(Name name, Phone phone, Email email, Address address, Day day,
                   Time startTime, Time endTime, Rate rate, boolean isPaid, Set<Tag> tags) {
         requireAllNonNull(name, phone, email, address, day, startTime, endTime, rate, tags);
-
-        if (!endTime.isAfter(startTime)) {
-            throw new IllegalArgumentException(Time.MESSAGE_CONSTRAINTS);
-        }
 
         this.name = name;
         this.phone = phone;
