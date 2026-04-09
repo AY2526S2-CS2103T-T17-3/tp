@@ -25,7 +25,7 @@ public class AddTagCommand extends TagCommand {
     public static final String MESSAGE_USAGE = COMMAND_PHRASE + ": Adds tag(s) to person(s) in the address book. "
             + "Parameters: "
             + "INDEX [INDEX]... (must be positive integers) "
-            + PREFIX_TAG + "TAG (can contain any characters but must not be empty and cannot have more than 20 characters.)\n"
+            + PREFIX_TAG + "TAG (" + Tag.MESSAGE_CONSTRAINTS + ")\n"
             + "Example: " + COMMAND_PHRASE + " "
             + "1 2 "
             + PREFIX_TAG + "Primary 1 "
