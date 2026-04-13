@@ -22,7 +22,7 @@ public class AddTagCommand extends TagCommand {
     public static final String SUBCOMMAND_WORD = "add";
     public static final String COMMAND_PHRASE = TagCommand.COMMAND_WORD + " " + SUBCOMMAND_WORD;
 
-    public static final String MESSAGE_USAGE = COMMAND_PHRASE + ": Adds tag(s) to person(s) in the address book. "
+    public static final String MESSAGE_USAGE = COMMAND_PHRASE + ": Adds tag(s) to student(s) in the address book. "
             + "Parameters: "
             + "INDEX [INDEX]... (must be positive integers) "
             + PREFIX_TAG + "TAG (can contain any characters except '/', must not be empty "
@@ -32,10 +32,10 @@ public class AddTagCommand extends TagCommand {
             + PREFIX_TAG + "Primary 1 "
             + PREFIX_TAG + "Mathematics";
 
-    public static final String MESSAGE_SUCCESS = "Added tags (%1$s) to person: %2$s";
-    public static final String MESSAGE_BATCH_SUCCESS = "Added tags to persons: %1$s";
+    public static final String MESSAGE_SUCCESS = "Added tags (%1$s) to student: %2$s";
+    public static final String MESSAGE_BATCH_SUCCESS = "Added tags to students: %1$s";
     public static final String MESSAGE_TAG_ALREADY_EXISTS =
-            "No persons were updated because all specified tags already exist.";
+            "No students were updated because all specified tags already exist.";
 
     private final List<Person> affectedPersons = new ArrayList<>();
     private final List<Set<Tag>> tagsAddedByPerson = new ArrayList<>();

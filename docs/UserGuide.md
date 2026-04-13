@@ -245,7 +245,7 @@ OnlyTutors does not allow duplicate students. Two students are considered duplic
 | `add n/Alice Tan p/81234567 e/alice@example.com a/Blk 30 Geylang St 29, #06-40 d/Wednesday st/10:00 et/12:00 r/60` | Adds student Alice Tan with a Wednesday 10am–12pm lesson at $60/lesson |
 
 **Expected output** (on success):
-> `New contact added: John Doe; Phone: 98765432; Email: johnd@example.com; Address: 311, Clementi Ave 2, #02-25; Day: MONDAY; Start Time: 15:00; End Time: 17:00; Rate: 50; Tags:`
+> `New student added: John Doe; Phone: 98765432; Email: johnd@example.com; Address: 311, Clementi Ave 2, #02-25; Day: MONDAY; Start Time: 15:00; End Time: 17:00; Rate: 50; Tags:`
 
 ### ⚠️ Common mistakes when adding a student
 
@@ -289,7 +289,7 @@ Use `list` after a [`find`](#finding-students-by-name-find) command to return to
 * Any extra text after `list` is ignored (e.g. `list abc` is treated as `list`).
 
 **Expected output:**
-> `Listed all persons`
+> `Listed all student(s)`
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -327,7 +327,7 @@ To add tags without replacing, use [`tag add`](#adding-tags-to-a-student-tag-add
 | `edit 3 d/Friday st/14:00 et/16:00` | Changes the lesson day and time for the 3rd student |
 
 **Expected output** (on success):
-> `Edited person: Elliot; Phone: ...`
+> `Edited student: Betsy Crowe; Phone: ...`
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -353,7 +353,7 @@ Finds students whose names contain any of the given keywords.
 | `find alex david` | Returns `Alex Yeoh` and `David Li` |
 
 **Expected output:**
-> `2 persons listed!`
+> `2 student(s) listed!`
 
 <div markdown="span" class="alert alert-primary">:bulb: **Tip:**
 After using `find`, use [`list`](#listing-all-students-list) to return to the full student list.
@@ -386,7 +386,7 @@ Finds students who match all of the given tags exactly.
 * `tag find t/` is rejected because tags cannot be empty.
 
 **Expected output:**
-> `2 persons listed!`
+> `2 student(s) listed!`
 
 <div markdown="span" class="alert alert-primary">:bulb: **Tip:**
 After using `tag find`, use [`list`](#listing-all-students-list) to return to the full student list.
@@ -423,7 +423,7 @@ This action cannot be undone. Make sure you have selected the correct student(s)
 | `find Betsy` then `delete 1` | Deletes the 1st student in the `find` results |
 
 **Expected output** (on success):
-> `Deleted 3 person(s): (1) John Doe, (3) Jane Smith, (7) Sandrone`
+> `Deleted 3 student(s): (1) John Doe, (3) Jane Smith, (7) Sandrone`
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -456,10 +456,10 @@ You can tag multiple students at once by specifying multiple indices. e.g. `tag 
 | `tag add 1 2 3 t/Econ$`           | Adds the tag `Econ$` to the 1st, 2nd, and 3rd students if they do not have it |
 
 **Expected output** (on success):
-> `Added tags (Math) to person: John Doe`
+> `Added tags (Math) to student: John Doe`
 
 **Expected output** (on success):
-> `Added tags (Primary 3, Science) to person: John Doe`
+> `Added tags (Primary 3, Science) to student: John Doe`
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -490,7 +490,7 @@ You can remove tags from multiple students at once by specifying multiple indice
 | `tag delete 1 2 3 t/Econ$`           | Removes the `Econ$` tag from the 1st, 2nd, and 3rd students if they have it |
 
 **Expected output** (on success):
-> `Deleted tags (Math) from person: John Doe`
+> `Deleted tags (Math) from student: John Doe`
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -521,7 +521,7 @@ You can mark multiple students as paid at once by specifying multiple indices. e
 | `find John` then `mark 1` | Marks the 1st student in the `find` results as paid |
 
 **Expected output** (on success):
-> `Marked 1 person(s) as paid: (1) John Doe`
+> `Marked 1 student(s) as paid: (1) John Doe`
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -549,7 +549,7 @@ You can unmark multiple students at once by specifying multiple indices. e.g. `u
 | `unmark 1 2 3` | Marks the 1st, 2nd, and 3rd students as unpaid |
 
 **Expected output** (on success):
-> `Marked 3 person(s) as unpaid: (1) John Doe, (2) Jane Smith, (3) Vincent`
+> `Marked 3 student(s) as unpaid: (1) John Doe, (2) Jane Smith, (3) Vincent`
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -566,9 +566,9 @@ This deletes **all** student data and cannot be undone. Use with caution.
 </div>
 
 **Expected output:**
-> This will delete all contacts. Are you sure? Enter 'y' or 'Y' to confirm; any other input will abort.>
+> This will delete all student(s). Are you sure? Enter 'y' or 'Y' to confirm; any other input will abort.>
 > 
-> Cleared all contacts. (after entering y or Y)
+> Cleared all student(s). (after entering y or Y)
 
 --------------------------------------------------------------------------------------------------------------------
 

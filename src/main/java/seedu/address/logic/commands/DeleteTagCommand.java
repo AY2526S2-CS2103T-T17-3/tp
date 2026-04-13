@@ -24,7 +24,7 @@ public class DeleteTagCommand extends TagCommand {
     public static final String COMMAND_PHRASE = TagCommand.COMMAND_WORD + " " + SUBCOMMAND_WORD;
 
     public static final String MESSAGE_USAGE = COMMAND_PHRASE
-            + ": Deletes tag(s) from person(s) in the address book. "
+            + ": Deletes tag(s) from student(s) in the address book. "
             + "Parameters: "
             + "INDEX [INDEX]... (must be positive integers) "
             + PREFIX_TAG + "TAG (must be a non-empty string)\n"
@@ -33,10 +33,10 @@ public class DeleteTagCommand extends TagCommand {
             + PREFIX_TAG + "Primary1 "
             + PREFIX_TAG + "Mathematics";
 
-    public static final String MESSAGE_SUCCESS = "Deleted tags (%1$s) from person: %2$s";
-    public static final String MESSAGE_BATCH_SUCCESS = "Deleted tags from persons: %1$s";
+    public static final String MESSAGE_SUCCESS = "Deleted tags (%1$s) from student: %2$s";
+    public static final String MESSAGE_BATCH_SUCCESS = "Deleted tags from students: %1$s";
     public static final String MESSAGE_TAG_NOT_FOUND =
-            "No persons were updated because none have the specified tags.";
+            "No student(s) were updated because none have the specified tags.";
 
     private final List<Person> affectedPersons = new ArrayList<>();
     private final List<Set<Tag>> tagsDeletedByPerson = new ArrayList<>();

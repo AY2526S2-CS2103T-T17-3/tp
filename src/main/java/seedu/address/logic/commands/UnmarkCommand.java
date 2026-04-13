@@ -18,15 +18,15 @@ public class UnmarkCommand extends BatchCommand {
     public static final String COMMAND_WORD = "unmark";
 
     public static final String MESSAGE_USAGE = COMMAND_WORD
-            + ": Marks the payment status of the person(s) identified by index number(s)"
+            + ": Marks the payment status of the student(s) identified by index number(s)"
             + " in the displayed student list as unpaid.\n"
             + "Parameters: INDEX [INDEX]... (must be positive integers)\n"
             + "Example: " + COMMAND_WORD + " 1 2 3";
 
-    public static final String MESSAGE_UNMARK_SUCCESS = "Marked %1$d person(s) as unpaid: %2$s";
-    public static final String MESSAGE_ALREADY_UNPAID = "This person has already been marked as unpaid: %1$s";
+    public static final String MESSAGE_UNMARK_SUCCESS = "Marked %1$d student(s) as unpaid: %2$s";
+    public static final String MESSAGE_ALREADY_UNPAID = "This student has already been marked as unpaid: %1$s";
     public static final String MESSAGE_ALREADY_UNPAID_PLURAL =
-            "These persons have already been marked as unpaid: %1$s";
+            "These students have already been marked as unpaid: %1$s";
 
     /**
      * Creates an UnmarkCommand to mark the persons at {@code targetIndices} as unpaid.

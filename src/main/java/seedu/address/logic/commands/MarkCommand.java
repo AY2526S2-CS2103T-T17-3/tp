@@ -18,15 +18,15 @@ public class MarkCommand extends BatchCommand {
     public static final String COMMAND_WORD = "mark";
 
     public static final String MESSAGE_USAGE = COMMAND_WORD
-            + ": Marks the payment status of the person(s) identified by index number(s)"
+            + ": Marks the payment status of the student(s) identified by index number(s)"
             + " in the displayed student list as paid.\n"
             + "Parameters: INDEX [INDEX]... (must be positive integers)\n"
             + "Example: " + COMMAND_WORD + " 1 2 3";
 
-    public static final String MESSAGE_MARK_SUCCESS = "Marked %1$d person(s) as paid: %2$s";
-    public static final String MESSAGE_ALREADY_PAID = "This person has already been marked as paid: %1$s";
+    public static final String MESSAGE_MARK_SUCCESS = "Marked %1$d student(s) as paid: %2$s";
+    public static final String MESSAGE_ALREADY_PAID = "This student has already been marked as paid: %1$s";
     public static final String MESSAGE_ALREADY_PAID_PLURAL =
-            "These persons have already been marked as paid: %1$s";
+            "These students have already been marked as paid: %1$s";
 
     /**
      * Creates a MarkCommand to mark the persons at {@code targetIndices} as paid.
