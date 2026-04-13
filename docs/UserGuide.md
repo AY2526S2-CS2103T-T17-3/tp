@@ -327,7 +327,7 @@ To add tags without replacing, use [`tag add`](#adding-tags-to-a-student-tag-add
 | `edit 3 d/Friday st/14:00 et/16:00` | Changes the lesson day and time for the 3rd student |
 
 **Expected output** (on success):
-> `Edited Person: Elliot; Phone: ...`
+> `Edited person: Elliot; Phone: ...`
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -423,7 +423,7 @@ This action cannot be undone. Make sure you have selected the correct student(s)
 | `find Betsy` then `delete 1` | Deletes the 1st student in the `find` results |
 
 **Expected output** (on success):
-> `Deleted 3 Person(s): (1) John Doe, (3) Jane Smith, (7) Sandrone`
+> `Deleted 3 person(s): (1) John Doe, (3) Jane Smith, (7) Sandrone`
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -456,10 +456,10 @@ You can tag multiple students at once by specifying multiple indices. e.g. `tag 
 | `tag add 1 2 3 t/Econ$`           | Adds the tag `Econ$` to the 1st, 2nd, and 3rd students if they do not have it |
 
 **Expected output** (on success):
-> `Added tags (Math) to student: John Doe`
+> `Added tags (Math) to person: John Doe`
 
 **Expected output** (on success):
-> `Added tags (Primary 3, Science) to student: John Doe`
+> `Added tags (Primary 3, Science) to person: John Doe`
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -490,7 +490,7 @@ You can remove tags from multiple students at once by specifying multiple indice
 | `tag delete 1 2 3 t/Econ$`           | Removes the `Econ$` tag from the 1st, 2nd, and 3rd students if they have it |
 
 **Expected output** (on success):
-> `Deleted tags (Math) from student: John Doe`
+> `Deleted tags (Math) from person: John Doe`
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -521,7 +521,7 @@ You can mark multiple students as paid at once by specifying multiple indices. e
 | `find John` then `mark 1` | Marks the 1st student in the `find` results as paid |
 
 **Expected output** (on success):
-> `Marked 1 student(s) as paid: (1) John Doe`
+> `Marked 1 person(s) as paid: (1) John Doe`
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -549,7 +549,7 @@ You can unmark multiple students at once by specifying multiple indices. e.g. `u
 | `unmark 1 2 3` | Marks the 1st, 2nd, and 3rd students as unpaid |
 
 **Expected output** (on success):
-> `Marked 3 student(s) as unpaid: (1) John Doe, (2) Jane Smith, (3) Vincent`
+> `Marked 3 person(s) as unpaid: (1) John Doe, (2) Jane Smith, (3) Vincent`
 
 --------------------------------------------------------------------------------------------------------------------
 
