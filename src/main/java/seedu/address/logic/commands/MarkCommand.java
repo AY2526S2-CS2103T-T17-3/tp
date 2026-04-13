@@ -18,7 +18,7 @@ public class MarkCommand extends BatchCommand {
     public static final String COMMAND_WORD = "mark";
 
     public static final String MESSAGE_USAGE = COMMAND_WORD
-            + ": Marks the payment status of the student(s) identified by index number(s)"
+            + ": Marks the payment status of the person(s) identified by index number(s)"
             + " in the displayed student list as paid.\n"
             + "Parameters: INDEX [INDEX]... (must be positive integers)\n"
             + "Example: " + COMMAND_WORD + " 1 2 3";

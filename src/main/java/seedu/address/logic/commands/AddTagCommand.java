@@ -32,10 +32,10 @@ public class AddTagCommand extends TagCommand {
             + PREFIX_TAG + "Primary 1 "
             + PREFIX_TAG + "Mathematics";
 
-    public static final String MESSAGE_SUCCESS = "Added tags (%1$s) to student: %2$s";
-    public static final String MESSAGE_BATCH_SUCCESS = "Added tags to students: %1$s";
+    public static final String MESSAGE_SUCCESS = "Added tags (%1$s) to person: %2$s";
+    public static final String MESSAGE_BATCH_SUCCESS = "Added tags to persons: %1$s";
     public static final String MESSAGE_TAG_ALREADY_EXISTS =
-            "No students were updated because all specified tags already exist.";
+            "No persons were updated because all specified tags already exist.";
 
     private final List<Person> affectedPersons = new ArrayList<>();
     private final List<Set<Tag>> tagsAddedByPerson = new ArrayList<>();

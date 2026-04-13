@@ -33,10 +33,10 @@ public class DeleteTagCommand extends TagCommand {
             + PREFIX_TAG + "Primary1 "
             + PREFIX_TAG + "Mathematics";
 
-    public static final String MESSAGE_SUCCESS = "Deleted tags (%1$s) from student: %2$s";
-    public static final String MESSAGE_BATCH_SUCCESS = "Deleted tags from students: %1$s";
+    public static final String MESSAGE_SUCCESS = "Deleted tags (%1$s) from person: %2$s";
+    public static final String MESSAGE_BATCH_SUCCESS = "Deleted tags from persons: %1$s";
     public static final String MESSAGE_TAG_NOT_FOUND =
-            "No students were updated because none have the specified tags.";
+            "No persons were updated because none have the specified tags.";
 
     private final List<Person> affectedPersons = new ArrayList<>();
     private final List<Set<Tag>> tagsDeletedByPerson = new ArrayList<>();

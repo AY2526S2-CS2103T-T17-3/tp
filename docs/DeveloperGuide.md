@@ -560,7 +560,7 @@ testers are expected to do more *exploratory* testing.
       Expected: First and second students are marked as paid. Success message with count and names shown.
 
    1. Test case: `mark 1` (when student 1 is already paid)<br>
-      Expected: No change. Error message with the student's index and name shown (e.g., `This student has already been marked as paid: (1) John Doe`).
+      Expected: No change. Error message with the student's index and name shown (e.g., `This person has already been marked as paid: (1) John Doe`).
 
 1. Unmarking a student as unpaid
 
@@ -573,7 +573,7 @@ testers are expected to do more *exploratory* testing.
       Expected: First and second students are marked as unpaid. Success message with count and names shown.
 
    1. Test case: `unmark 1` (when student 1 is already unpaid)<br>
-      Expected: No change. Error message with the student's index and name shown (e.g., `This student has already been marked as unpaid: (1) John Doe`).
+      Expected: No change. Error message with the student's index and name shown (e.g., `This person has already been marked as unpaid: (1) John Doe`).
 
 ### Clearing all entries
 
@@ -731,7 +731,7 @@ Currently, each student can only have one lesson per week. Each student is repre
 Currently, batch tag add and batch tag delete commands return only the names of students who were affected. However, indexes are not shown, making it difficult to map results back to the displayed list. This is also inconsistent with other batch commands such as mark/unmark and delete, which already include indices.
 
 * **Current behavior:**
-`Added tags to students: Alex Yeoh (math); Bernice Yu (math); Charlotte Oliveiro (math)`
+`Added tags to persons: Alex Yeoh (math); Bernice Yu (math); Charlotte Oliveiro (math)`
 
 * **Planned behavior:**
-`Added tags to students: (1) Alex Yeoh (math); (2) Bernice Yu (math); (3) Charlotte Oliveiro (math)`
+`Added tags to persons: (1) Alex Yeoh (math); (2) Bernice Yu (math); (3) Charlotte Oliveiro (math)`
